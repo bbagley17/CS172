@@ -23,12 +23,12 @@ int main()
 	//If fan1 is on, it informs the user of such
 	if (fan1.getOnOff() == true)
 	{
-		cout << "Fan 1 is on.";
+		cout << "Fan 1 is on." << endl;
 	}
 	//If fan1 isn't on, it informs the user
 	else
 	{
-		cout << "Fan 1 is off.";
+		cout << "Fan 1 is off." << endl;
 	}
 	//Finally, displaying fan1's radius
 	cout << "Fan 1's radius is " << fan1.getRadius() << "." << endl;
@@ -39,11 +39,11 @@ int main()
 	//Display whether fan2 is on or off
 	if (fan2.getOnOff() == true)
 	{
-		cout << "Fan 2 is on.";
+		cout << "Fan 2 is on." << endl;
 	}
 	else
 	{
-		cout << "Fan 2 is off.";
+		cout << "Fan 2 is off." << endl;
 	}
 	//Display radius of fan2
 	cout << "Fan 2's radius is " << fan2.getRadius() << "." << endl;
@@ -73,6 +73,24 @@ int main()
 
 	//Constructing quadratic equation using entered coefficients
 	QuadraticEquation Quadratic1(a, b, c);
+
+	//Using functions from QuadraticEquation class which solve for the discriminant and the two roots.
+	Quadratic1.solveDiscriminant();
+	Quadratic1.solveRoot1();
+	Quadratic1.solveRoot2();
+
+	cout << "The discriminant of your quadratic equation is: " << Quadratic1.getDiscriminant() << endl;
+	if (Quadratic1.getDiscriminant() >= 0)
+	{
+		cout << "The roots of the quadratic equation are: " << Quadratic1.getRoot1() << " and " << Quadratic1.getRoot2() << "." << endl;
+	}
+	else
+	{
+		cout << "The discriminant was less than zero, so the roots are irrational." << endl;
+	}
+
+
+
 
 	//Code for exercise 9.11
 
