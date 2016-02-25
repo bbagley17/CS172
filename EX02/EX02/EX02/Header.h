@@ -23,7 +23,7 @@ public:
 	//Arg constructor for fan class
 	fan(int setSpeed, bool setOnOff, double setRadius)
 	{
-		if (setSpeed >=0 && setSpeed <= 3)
+		if (setSpeed >= 0 && setSpeed <= 3)
 			speed = setSpeed;
 		else
 		{
@@ -164,23 +164,54 @@ public:
 class EvenNumber
 {
 public:
+	//Integer value of the first EvenNumber object to be created
 	int storedValue;
+
+	//Copy of storedValue to be used as backup when performing operations on storedValue
+	int copyOfStoredValue;
+
+	//No-arg constructor for EvenNumber object
 	EvenNumber()
 	{
 		storedValue = 0;
+		copyOfStoredValue = 0;
 	}
+
+	//Constructor for EvenNumber object
 	EvenNumber(int enteredValue)
 	{
 		storedValue = enteredValue;
+		copyOfStoredValue = enteredValue;
 	}
+
+	//Function which returns the value of an EvenNumber object
 	int getValue()
 	{
 		return storedValue;
 	}
-	int getNext()
-	{
-		;
-	}
 
+	//Function which creates an EvenNumber object for the next greatest even number above the entered value
+	void getNext()
+	{
+		storedValue++;
+		while (storedValue % 2 != 0)
+		{
+			storedValue++;
+		}
+		//I was not able to find a way to create a function which would return an object, so I resorted to a void function which created an object.
+		//The problem wording was rather strange.
+		EvenNumber(storedValue);
+		storedValue = copyOfStoredValue;
+	}
+	void getPrevious()
+	{
+		storedValue--;
+		while (storedValue % 2 != 0)
+		{
+			storedValue--;
+		}
+		EvenNumber(storedValue);
+		storedValue = copyOfStoredValue;
+	}
 };
 #endif // !EvenNumber_H_ 

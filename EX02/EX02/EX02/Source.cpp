@@ -1,7 +1,7 @@
 #include "Header.h"
 #include <iostream>
 
-;using namespace std;
+; using namespace std;
 
 int main()
 {
@@ -80,19 +80,32 @@ int main()
 	Quadratic1.solveRoot2();
 
 	cout << "The discriminant of your quadratic equation is: " << Quadratic1.getDiscriminant() << endl;
-	if (Quadratic1.getDiscriminant() >= 0)
+	if (Quadratic1.getDiscriminant() > 0)
 	{
 		cout << "The roots of the quadratic equation are: " << Quadratic1.getRoot1() << " and " << Quadratic1.getRoot2() << "." << endl;
 	}
+	else if (Quadratic1.getDiscriminant() == 0)
+	{
+		cout << "This quadratic equation has only one root, which is " << Quadratic1.getRoot1() << "." << endl;
+	}
 	else
 	{
-		cout << "The discriminant was less than zero, so the roots are irrational." << endl;
+		cout << "The discriminant was less than zero, so the equation has no real roots." << endl;
 	}
 
 
 
 
 	//Code for exercise 9.11
+	int valueToEnter = 16;
+	//Creating EvenNumber with the value 16
+	EvenNumber EvenNumber1(valueToEnter);
+	//Creating an EvenNumber object for the next greatest even integer
+	EvenNumber1.getNext();
 
+	//Creating an EvenNumber object for the next lower valued even integer
+	EvenNumber1.getPrevious();
+
+
+	return 0;
 }
-
