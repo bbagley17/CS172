@@ -165,10 +165,10 @@ class EvenNumber
 {
 public:
 	//Integer value of the first EvenNumber object to be created
-	int storedValue;
+	int storedValue = 0;
 
 	//Copy of storedValue to be used as backup when performing operations on storedValue
-	int copyOfStoredValue;
+	int copyOfStoredValue = 0;
 
 	//No-arg constructor for EvenNumber object
 	EvenNumber()
@@ -190,28 +190,33 @@ public:
 		return storedValue;
 	}
 
-	//Function which creates an EvenNumber object for the next greatest even number above the entered value
-	void getNext()
+	//Function which creates an EvenNumber object for the next larger even number above the entered value
+	int getNext()
 	{
-		storedValue++;
-		while (storedValue % 2 != 0)
+		int tempStoredValue = storedValue;
+		//Incrementing the storedValue upwards until an even number is found
+		tempStoredValue++;
+		while (tempStoredValue % 2 != 0)
 		{
-			storedValue++;
+			tempStoredValue++;
 		}
-		//I was not able to find a way to create a function which would return an object, so I resorted to a void function which created an object.
-		//The problem wording was rather strange.
-		EvenNumber(storedValue);
-		storedValue = copyOfStoredValue;
+
+		return tempStoredValue;
 	}
-	void getPrevious()
+
+	//Function which creates an EvenNumber object for the next lower even integer value above the entered value
+	int getPrevious()
 	{
-		storedValue--;
-		while (storedValue % 2 != 0)
+		//Using the copy of the stored value created earlier, incrementing downwards until another
+		// even number is found.
+		int tempStoredValue = storedValue;
+		tempStoredValue--;
+		while (tempStoredValue % 2 != 0)
 		{
-			storedValue--;
+			tempStoredValue--;
 		}
-		EvenNumber(storedValue);
-		storedValue = copyOfStoredValue;
+		return tempStoredValue;
+
 	}
 };
 #endif // !EvenNumber_H_ 

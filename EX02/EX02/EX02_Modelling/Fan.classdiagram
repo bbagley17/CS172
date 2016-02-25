@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8df30ffc-0fe0-4080-a212-5becb5d76b49" name="UMLClassDiagram1" linkedPackageId="c4e36ea4-4acd-4ae9-ac6c-f4d80a0d0b72" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7d14b6ad-a713-4909-a117-8c347a523350" name="Fan" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="31de6f2c-ca94-4743-abc4-f06d2285a802" />
+        <ownedAttributesInternal>
+          <property Id="06b4e801-86af-4bff-a2f4-611858bdbf1e" name="bool On (on if true, off if false)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="65dc4c48-0286-41c6-8309-2fcfd6703acf" />
+          </property>
+          <property Id="ad47d958-bd7d-4e45-82aa-10a86684da20" name="double Radius (of fan blades)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="38da7b2c-9060-4f57-9835-33b20446876c" />
+          </property>
+          <property Id="a9e2bd3a-b230-42f3-a9f5-bed431bcf5ab" name="int speed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="af886336-98a3-4a19-a777-5eddbbe457d7" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ecc9e156-55d9-4882-a526-c74f0bca8b3c" name="bool getOnOff" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5fc9445e-66c2-4376-bfdc-01dce86a15dd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5d35ef84-f9ec-480c-9bb0-8f19f8ff2df5" name="displays whether fan is on or not" direction="In" isUnique="false">
+                  <elementDefinition Id="cd91f815-16ff-4914-a44e-5b1dc27d614d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bf704ae4-208c-428f-b404-83dd596a4104" name="int getSpeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a93bf7f6-86a4-4ae7-943a-411aeb9beb0e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="923a20cf-9c4d-41c7-a2a2-15d06aef8a4b" name="accessor function for fan's speed" direction="In" isUnique="false">
+                  <elementDefinition Id="5f25fa7b-d946-47c0-8fc3-eda3f46a610d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c7167cee-be59-4a2a-a07c-ccf7026a0419" name="double getRadius" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="849dac51-24b3-420c-aae5-a5ed8e8cdbf8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1f06c3c9-9ce3-4caf-b9a1-c794c21fe126" name="accessor function to display fan radius" direction="In" isUnique="false">
+                  <elementDefinition Id="f66921a6-371f-4fec-baaa-50e2105e0a4d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="44be9298-cdf0-4e85-8e1f-fc5d7df02a3c" name="void onOff" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c47fb903-9ec2-4920-bbd3-0bbfec901523" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0bc94be5-3d3f-4c45-ba1d-7bfbeaa58bba" name="turns fan on or off" direction="In" isUnique="false">
+                  <elementDefinition Id="25df3e43-6b4e-46d6-b585-b834a4414c14" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="092ed7ad-b2b8-4ca2-a7b1-d2c75cb977e6" name="void setRadius" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c73b1539-aace-4939-bb75-03a5df7ac04a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="84cf7bcb-1b1b-49de-abe5-87f639388772" name="mutator function for fan's radius" direction="In" isUnique="false">
+                  <elementDefinition Id="1df66fff-f61b-42c0-a9b9-c9937cb5fa1d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="82a92282-f468-4628-8e1e-4a5c35e34f85" name="void speedSet" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6948aa51-b30f-4d82-bab1-d9cdeb69c33a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c2d0fc34-4156-4c61-b467-91e245575229" name="mutator function for fan's speed" direction="In" isUnique="false">
+                  <elementDefinition Id="625afdbf-78c7-477a-a99c-a7c698d96561" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="c4e36ea4-4acd-4ae9-ac6c-f4d80a0d0b72" name="EX02_Modelling">
+    <elementDefinition Id="3ec4ea66-1105-4970-954c-1490080c27ca" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2c72f287-69b9-4d14-9bff-47248342bb2b">
+        <profileInstance Id="554b8b06-61f9-4534-b697-454a690993f2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1b012437-4312-4978-aa16-9a51fe8f0c2d">
+        <profileInstance Id="10d5715a-96a6-4df6-8b2b-f418d50ccbbe" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

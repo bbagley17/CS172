@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EvenNumber">
+  <logicalClassDesignerModelMoniker Id="49d6e579-2ea1-4919-a2cb-5f67cd61e5e3" />
+  <nestedChildShapes>
+    <classShape Id="02fa34d2-13ba-4e1c-9b19-c258cd7a3a0a" absoluteBounds="1, 1, 3, 1.7031249602635703" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="00046c19-dd4b-44ec-a943-ae56d76f613b" LastKnownName="EvenNumber" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="2d408b2d-c7fc-4144-93d0-5e3addd1ff04" absoluteBounds="1.0150000000000001, 1.3900000000000001, 2.9699999999999998, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="01b44b1a-eb64-45b0-acf2-1cb99b7b4cfe" absoluteBounds="1.015, 1.921484357615312, 2.9699999999999998, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

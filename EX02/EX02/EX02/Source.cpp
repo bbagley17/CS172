@@ -98,13 +98,24 @@ int main()
 
 	//Code for exercise 9.11
 	int valueToEnter = 16;
+	int nextLarger;
+	int nextLower;
+
 	//Creating EvenNumber with the value 16
 	EvenNumber EvenNumber1(valueToEnter);
-	//Creating an EvenNumber object for the next greatest even integer
-	EvenNumber1.getNext();
 
-	//Creating an EvenNumber object for the next lower valued even integer
-	EvenNumber1.getPrevious();
+	//Creating an EvenNumber object for the next greatest even integer
+	nextLarger = EvenNumber1.getNext();
+	EvenNumber EvenNumber2(nextLarger);
+
+	//Creating an EvenNumber object for the next lowest valued even integer
+	nextLower = EvenNumber1.getPrevious();
+	EvenNumber EvenNumber3(nextLower);
+
+	cout << "The value of the first EvenNumber was " << EvenNumber1.getValue() << "." << endl;
+	cout << "The next greater EvenNumber is " << EvenNumber2.getValue() << "." << endl;
+	cout << "The next lower EvenNumber is " << EvenNumber3.getValue() << "." << endl;
+
 
 
 	return 0;
