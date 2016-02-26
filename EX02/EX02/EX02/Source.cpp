@@ -104,13 +104,8 @@ int main()
 	//Creating EvenNumber with the value 16
 	EvenNumber EvenNumber1(valueToEnter);
 
-	//Creating an EvenNumber object for the next greatest even integer
-	nextLarger = EvenNumber1.getNext();
-	EvenNumber EvenNumber2(nextLarger);
-
-	//Creating an EvenNumber object for the next lowest valued even integer
-	nextLower = EvenNumber1.getPrevious();
-	EvenNumber EvenNumber3(nextLower);
+	EvenNumber1.getNext();
+	EvenNumber1.getPrevious();
 
 	cout << "The value of the first EvenNumber was " << EvenNumber1.getValue() << "." << endl;
 	cout << "The next greater EvenNumber is " << EvenNumber2.getValue() << "." << endl;

@@ -191,7 +191,7 @@ public:
 	}
 
 	//Function which creates an EvenNumber object for the next larger even number above the entered value
-	int getNext()
+	EvenNumber getNext()
 	{
 		int tempStoredValue = storedValue;
 		//Incrementing the storedValue upwards until an even number is found
@@ -200,12 +200,13 @@ public:
 		{
 			tempStoredValue++;
 		}
-
-		return tempStoredValue;
+		//Creating the object for the value determined
+		EvenNumber EvenNumber2(tempStoredValue);
+		return EvenNumber2;
 	}
 
 	//Function which creates an EvenNumber object for the next lower even integer value above the entered value
-	int getPrevious()
+	EvenNumber getPrevious()
 	{
 		//Using the copy of the stored value created earlier, incrementing downwards until another
 		// even number is found.
@@ -215,7 +216,8 @@ public:
 		{
 			tempStoredValue--;
 		}
-		return tempStoredValue;
+		EvenNumber EvenNumber3(tempStoredValue);
+		return EvenNumber3;
 
 	}
 };
