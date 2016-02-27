@@ -1,0 +1,45 @@
+/* 
+-----Rubric-----
+(From the Syllabus)
+
+25%	Problem Analysis: 
+	Did your solution show that you had a good, general understanding of the problem, 
+	whether your execution of your solution worked or not?
+	
+50%	Execution and results: 
+	Did your solution and its implementation work as specified in the assignment?
+	
+15%	Quality and maintainability: 
+	Did you design your project using good programming practices as discussed in class and in your textbook?
+	
+10%	Efficiency and creativity: 
+	Was your solution not just functional, but elegant, both in terms of efficiency and how the project highlighted your creative genius?
+
+
+
+EX02_01: /15
+		UML----------- 5/5
+		Fan Object---- 4/5
+		Test Program-- 5/5
+EX02_02: /20
+		UML----------- 5/5
+		Object-------- 9/10
+		Test Program-- 5/5
+EX02_03: /15
+		UML----------- 5/5
+		Object-------- 4/5
+		Test Program-- 5/5
+
+
+Total: 47/50
+
+*/
+
+
+/* 
+Notes:
+- Great comments
+- UML doesn't need comments.
+- Remember that mutator functions are used to change/retrieve the values of private member varialbes
+
+*/

@@ -107,6 +107,23 @@ int main()
 	EvenNumber1.getNext();
 	EvenNumber1.getPrevious();
 
+
+	/* ---Joseph--- The problem here is that with the getNext() and the getPrevious(). They each return an EvenNumber object which is great.
+					However, the problem lies in the two lines above. The computer is calling these functions, but when it returns the value 
+					back to main(), it doesn't know what to do with them (store them in a variable, print them out...).
+	Code: 
+
+	EvenNumber EvenNumber2 = EvenNumber1.getNext();
+	EvenNumber EvenNumber3 = EvenNumber1.getPrevious();
+
+
+					This code works with how you have set up the rest of your code. 
+
+
+					Oh, and the read squigglies right under here are because they haven't been declared yet. 
+					I hope this helps. Because you had the code working, and Dr. Bell had you change the rest of the set up I'm not going to deduct points here.
+	*/
+
 	cout << "The value of the first EvenNumber was " << EvenNumber1.getValue() << "." << endl;
 	cout << "The next greater EvenNumber is " << EvenNumber2.getValue() << "." << endl;
 	cout << "The next lower EvenNumber is " << EvenNumber3.getValue() << "." << endl;

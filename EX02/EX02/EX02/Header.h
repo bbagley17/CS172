@@ -10,7 +10,7 @@ class fan
 public:
 	//The fan class will have three properties. Speed, radius, and on (on will be true if the fan is on, and false if the fan is off
 	int speed;
-	bool on;
+	bool on;																	/* ---Joseph--- These variables should be private. If they are public, it doesn't  make sense to have mutator functions. (-1)*/
 	double radius;
 	//No-arg constructor for fan class
 	fan()
@@ -23,7 +23,7 @@ public:
 	//Arg constructor for fan class
 	fan(int setSpeed, bool setOnOff, double setRadius)
 	{
-		if (setSpeed >= 0 && setSpeed <= 3)
+		if (setSpeed >= 0 && setSpeed <= 3)                                 /*   ---Joseph---   Nice range restriction */
 			speed = setSpeed;
 		else
 		{
@@ -74,7 +74,7 @@ public:
 class QuadraticEquation
 {
 public:
-	//Establishing coefficient variables for quadratic
+	//Establishing coefficient variables for quadratic                           /* ---Joseph--- These variables should be private. If they are public, it doesn't  make sense to have mutator functions. (-1)*/
 	double a;
 	double b;
 	double c;
@@ -164,7 +164,7 @@ public:
 class EvenNumber
 {
 public:
-	//Integer value of the first EvenNumber object to be created
+	//Integer value of the first EvenNumber object to be created							/* ---Joseph--- These variables should be private. If they are public, it doesn't  make sense to have mutator functions. (-1)*/
 	int storedValue = 0;
 
 	//Copy of storedValue to be used as backup when performing operations on storedValue
