@@ -2,6 +2,7 @@
 and that any help I received adhered to the rules stated for this exam. */
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Event.h"
 #include "Venue.h"
 
@@ -16,7 +17,7 @@ bool Venue::validTime(int time)
 	for (int n = 0; n < numEvents; n++)
 	{
 		//If the time slot is taken, set "available" to false.
-		if (time == scheduledEvents[12].getTime())
+		if (time == scheduledEvents[n].getTime())
 			available = false;
 	}
 	return available;
@@ -36,7 +37,7 @@ void Venue::addEvent(int time, string name)
 	//If the time slot is available, create the desired event
 	if (available == true)
 	{
-		scheduledEvents[numEvents] = Event(time, name);
+		scheduledEvents.push_back (Event(time, name));
 		cout << scheduledEvents[numEvents].getTitle() << " is now scheduled for " 
 			<< scheduledEvents[numEvents].getTime() << "." << endl;
 		numEvents++;

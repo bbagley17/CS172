@@ -2,6 +2,7 @@
 and that any help I received adhered to the rules stated for this exam. */
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Event.h"
 
 using namespace std;
@@ -12,7 +13,7 @@ class Venue
 {
 	//Creating an array for the events contained by the venue, and a counter to keep track of where to put new events.
 private:
-	Event scheduledEvents[12];
+	vector<Event>scheduledEvents;
 	int numEvents = 0;
 
 public:
