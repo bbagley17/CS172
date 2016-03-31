@@ -31,7 +31,7 @@ int main()
 	//string to be tested
 	string s; 
 	//Prompting user for string
-	cout << "Please entere a string: ";
+	cout << "Please enter a string: ";
 	cin >> s;
 	cout << "The program will now check to see if " << s << " is a palindrome." << endl;
 	//bool set based on whether or not the string is a palindrome
