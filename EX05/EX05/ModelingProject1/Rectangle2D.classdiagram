@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3c33f412-99c5-4575-a435-6aa7df751bfe" name="Rectangle2D" linkedPackageId="1b11a25b-c946-4c9c-bc67-9473b50eb722" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="57f2f030-96dd-475e-a799-902b0e543232">
+      <profileInstance Id="41452d43-89cc-4428-8ae3-583b98b560ed" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f90d3df2-6344-4749-bfed-5967f7484c9c">
+      <profileInstance Id="3ede0b56-6876-41c8-8596-69769dba2c77" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6398abc7-ecf2-46d7-b724-08797386da9a" name="Rectangle2D" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cc43f269-9dce-457c-a216-9bb74168f506" />
+        <ownedAttributesInternal>
+          <property Id="cca4a7f7-d73e-4ba2-a6f5-b359f92c54ea" name="double x" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="44e7e261-2c74-4b10-9ee6-79214c2ce93b" />
+          </property>
+          <property Id="20b6e89f-b90a-402a-bf1e-4b041fd2a7f9" name="double y" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cb9d3e60-ef6b-4124-810b-3b3cc98355f4" />
+          </property>
+          <property Id="1c2b697e-7af3-4d57-92bb-d0b788738672" name="double width" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="96660030-e5a6-4865-938f-4d467fc5bc2b" />
+          </property>
+          <property Id="6c933255-8ce1-45dd-a9a5-83593d671815" name="double height" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9927ccec-402d-482b-b041-830f1c632ac0" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d9c7e1fa-0680-48bc-8646-bb3452e9ecaf" name="getArea" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="75425412-35ab-46f3-8569-a70843c9b6c7" />
+          </operation>
+          <operation Id="a9324676-93cb-44ad-9cfe-4c949ae8e5d0" name="getPerimeter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9fd5c82d-34bb-4f91-ba35-dceaae14d4a8" />
+          </operation>
+          <operation Id="867f0b4e-a12e-4407-adaf-e3cb608c85e9" name="contains" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="21bb12c9-e5a1-41e1-b939-fba7fdde39b5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e1e594f0-4911-4d07-81de-8c5ab7c6e47e" name="double x" direction="In" isUnique="false">
+                  <elementDefinition Id="8f4910df-9963-4be4-b82e-2fbf56831138" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6b4c4a41-69c8-4bcc-aeab-9bdcd44b1f5c" name="double y" direction="In" isUnique="false">
+                  <elementDefinition Id="06603e76-c96d-4941-9c68-4b48667e9e21" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="dbce5b6d-9ada-4a75-a8fb-81ef550a6022" name="contains" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3bde6d8f-94c4-4319-8587-b0695d2ca5b4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6776de59-4928-4b45-844e-1eb49ab5b1b8" name="const Rectangle2D &amp;r" direction="In" isUnique="false">
+                  <elementDefinition Id="690756bd-dd73-45e3-85c6-b55d336f6dc8" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c13d5e15-8ed5-428d-acc7-f83aca79f030" name="overlaps" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="419eb83a-ce77-400e-8b5a-cf0f7a52b069" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="08e51ad1-71d0-4541-86ac-54a40e927407" name="const Rectangle2D &amp;r" direction="In" isUnique="false">
+                  <elementDefinition Id="46d9323f-3427-4055-9c5a-4f8d6ac06391" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="1b11a25b-c946-4c9c-bc67-9473b50eb722" name="ModelingProject1">
+    <elementDefinition Id="c4f68b19-6ea2-446d-a26d-3500e28e358c" />
+  </package>
+</logicalClassDesignerModel>
