@@ -2,6 +2,8 @@
 #include <string>
 #include <stack>
 #include <vector>
+#include <stack>
+
 
 using namespace std;
 
@@ -27,6 +29,73 @@ bool checkSorted(T input[], int size)
 			isSorted = false;
 	}
 	return isSorted;
+}
+
+
+//Work in progress. If it can't be salvaged, come up with a different version on Thursday...
+//
+//
+//
+//
+//
+//
+//
+////////////////////////////////////////////////////////////////////////////
+template<typename T>
+void shuffle(vector<T>& v)
+{
+	vector<bool> used;
+	for (int n = 0; n < v.size(); n++)
+	{
+		used.push_back(false);
+	}
+
+	stack<T> storage;
+	int target;
+	//A variable for whether or not the loop has finished shuffling the vector items into the stack. If continue = true,
+	// the vector has not been fully shuffled. If continue = false, the vector is fully shuffled into the stack. 
+	bool cont;
+	do
+	{
+		target = rand() % v.size();
+		//Variable for temporarily storing values for transfer from the vector to the stack.
+		int temp;
+		//Variable for whether or not a new item has actually been added to the stack.
+		bool success;
+		//Until a new variable is added to stack, keep selecting a new location in the vector. 
+		while (success = false)
+		{
+			if (used[target] = false)
+			{
+				//If the selected address in the vector was unused, add the value at that address to the stack
+				temp = v[target];
+				storage.push(temp);
+				//Declare that address as used.
+				used[target] = true;
+				//Stop this iteration of the loop 
+				success = true;
+			}
+			//If the selected address was already used, pick a new address at random and reiterate the array. 
+			else 
+			{
+				target = rand() % v.size();
+				success = false;
+			}
+		}
+		cont = false;
+		//If there are any remaining unused addresses in the vector, keep iterating the do-while loop. Otherwise, the loop ends.
+		for (int n = 0; n < used.size(); n++)
+			{
+				if (used[n] = false)
+					cont = true;
+			}
+	} while (cont = true);
+
+	for (int n = 0; n < used.size(); n++)
+	{
+		v[n] = storage.top();
+	}
+	
 }
 
 
@@ -77,5 +146,37 @@ int main()
 
 	{
 		//Code for exercise 12.20
+		vector<int> testVector;
+		cout << "How many values would you like to enter?" << endl;
+		int desiredSpots;
+		cin >> desiredSpots;
+		cout << "Please enter that many values: " << endl;
+		for (int n = 0; n < desiredSpots; n++)
+		{
+			int temp;
+			cin >> temp;
+			testVector.push_back(temp);
+		}
+		
+		cout << "The values of the vector are: " << endl;
+		for (int n = 0; n < testVector.size(); n++)
+		{
+			cout << testVector[n] << endl;
+		}
+		cout << "Shuffling the vector..." << endl;
+		shuffle(testVector);
+
+		for (int n = 0; n < testVector.size(); n++)
+		{
+			cout << testVector[n] << endl;
+		}
+
+	}
+
+
+	{
+		//Code for exercise 12.25
+
+
 	}
 }

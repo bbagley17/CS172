@@ -68,12 +68,18 @@ public:
 			isEmpty = false;
 		return isEmpty;
 	}
-
+	//Is this an acceptable method of clearing the vector??
+	//
+	//
+	//
+	//			?????????
+	//
+	//
 	void clear()
 	{
 		for (int n = 0; n < size; n++)
 		{
-			delete vectorItself[n];
+			delete[] vectorItself;
 		}
 	}
 
