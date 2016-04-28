@@ -1,24 +1,24 @@
-﻿Build started 4/21/2016 10:42:56 AM.
-     1>Project "C:\Users\bbagley17\Documents\GitHub\EX02\EX06\EX06\EX06\EX06.vcxproj" on node 2 (Build target(s)).
+﻿Build started 4/28/2016 8:15:29 AM.
+     1>Project "C:\Users\jflinn18\Documents\GitHub\bbagley17\CS172\EX06\EX06\EX06\EX06.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
          Source.cpp
-     1>c:\users\bbagley17\documents\github\ex02\ex06\ex06\ex06\account.h(50): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-     1>c:\users\bbagley17\documents\github\ex02\ex06\ex06\ex06\account.h(99): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\bbagley17\documents\github\ex02\ex06\ex06\ex06\source.cpp(187): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\bbagley17\documents\github\ex02\ex06\ex06\ex06\source.cpp(197): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\bbagley17\documents\github\ex02\ex06\ex06\ex06\source.cpp(41): warning C4018: '<': signed/unsigned mismatch
-         c:\users\bbagley17\documents\github\ex02\ex06\ex06\ex06\source.cpp(193): note: see reference to function template instantiation 'void shuffle<int>(std::vector<int,std::allocator<_Ty>> &)' being compiled
+     1>c:\users\jflinn18\documents\github\bbagley17\cs172\ex06\ex06\ex06\account.h(50): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+     1>c:\users\jflinn18\documents\github\bbagley17\cs172\ex06\ex06\ex06\account.h(99): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\jflinn18\documents\github\bbagley17\cs172\ex06\ex06\ex06\source.cpp(189): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\jflinn18\documents\github\bbagley17\cs172\ex06\ex06\ex06\source.cpp(199): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\jflinn18\documents\github\bbagley17\cs172\ex06\ex06\ex06\source.cpp(41): warning C4018: '<': signed/unsigned mismatch
+         c:\users\jflinn18\documents\github\bbagley17\cs172\ex06\ex06\ex06\source.cpp(195): note: see reference to function template instantiation 'void shuffle<int>(std::vector<int,std::allocator<_Ty>> &)' being compiled
                  with
                  [
                      _Ty=int
                  ]
-     1>c:\users\bbagley17\documents\github\ex02\ex06\ex06\ex06\source.cpp(46): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\jflinn18\documents\github\bbagley17\cs172\ex06\ex06\ex06\source.cpp(46): warning C4018: '<': signed/unsigned mismatch
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\bbagley17\Documents\GitHub\EX02\EX06\EX06\Debug\EX06.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\bbagley17\Documents\GitHub\EX02\EX06\EX06\Debug\EX06.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\bbagley17\Documents\GitHub\EX02\EX06\EX06\Debug\EX06.lib" /MACHINE:X86 Debug\Source.obj
-         EX06.vcxproj -> C:\Users\bbagley17\Documents\GitHub\EX02\EX06\EX06\Debug\EX06.exe
-     1>Done Building Project "C:\Users\bbagley17\Documents\GitHub\EX02\EX06\EX06\EX06\EX06.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jflinn18\Documents\GitHub\bbagley17\CS172\EX06\EX06\Debug\EX06.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\jflinn18\Documents\GitHub\bbagley17\CS172\EX06\EX06\Debug\EX06.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jflinn18\Documents\GitHub\bbagley17\CS172\EX06\EX06\Debug\EX06.lib" /MACHINE:X86 Debug\Source.obj
+         EX06.vcxproj -> C:\Users\jflinn18\Documents\GitHub\bbagley17\CS172\EX06\EX06\Debug\EX06.exe
+     1>Done Building Project "C:\Users\jflinn18\Documents\GitHub\bbagley17\CS172\EX06\EX06\EX06\EX06.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.68
+Time Elapsed 00:00:00.74

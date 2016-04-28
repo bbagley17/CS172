@@ -53,6 +53,8 @@ void shuffle(vector<T>& v)
 	//This was a truly random shuffling function that I was trying to implement, but it wouldn't behave itself.
 	//In the interest of time, I've replaced it with a boring shuffle program.
 
+	//Joseph: Time is always against us.
+
 	/*
 	vector<bool> used;
 	for (int n = 0; n < v.size(); n++)

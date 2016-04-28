@@ -73,7 +73,11 @@ public:
 	//
 	//
 	//			?????????
+	//    
+	//	Joseph: I think that this could be an acceptable way, but what if you want to use the vector after you clear it?
+	//          If you add a little bit more code to reinitialize the pointer to a new vector class, than it would be.
 	//
+	//          But with these changes, I think this is better than a lot of other ways to clear the vector.
 	//
 	void clear()
 	{
@@ -81,6 +85,8 @@ public:
 		{
 			delete[] vectorItself;
 		}
+
+		// Joseph: capacity = 10; vectorItself = new T[capacity];
 	}
 
 	void swap(vector v2)
